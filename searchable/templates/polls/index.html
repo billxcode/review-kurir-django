@@ -1,0 +1,10 @@
+{% if latest_questions %}
+    <ul>
+        {% for q in latest_questions %}
+            <li><a href="/{{ q.id }}">{{ q.question_text }}</li>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <p>no question are available</p>
+{% endif %}
