@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
     url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
     url(r'^(?P<question_id>[0-9]+)/results/$', views.results, name='results'),
+    url(r'^otherway/$', views.other_way_to_render_template, name='otherway')
 ]
